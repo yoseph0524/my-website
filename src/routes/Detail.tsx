@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import styles from "./Detail.module.css";
 
 type Project = {
   title: string;
   src: string;
+  url: string;
   description: string;
 };
 
 function Detail() {
   const [project, setProject] = useState<Project | null>(null);
+  const { projectId } = useParams<{ projectId: string }>();
+
+  console.log(projectId);
 
   const getProjects = async () => {
     try {
@@ -19,7 +24,15 @@ function Detail() {
       }
 
       const jsonData = await response.json();
-      setProject(jsonData.projects[0]); // Assuming you want the first project
+      if (projectId) {
+        const selectedProject = jsonData.projects.find(
+          (p: Project) => p.url === projectId
+        );
+
+        if (selectedProject) {
+          setProject(selectedProject);
+        }
+      }
     } catch (error) {
       if (error instanceof Error) {
         console.error("Fetch error: " + error.message);
@@ -31,22 +44,21 @@ function Detail() {
 
   useEffect(() => {
     getProjects();
-  }, []);
-  console.log(project);
+  }, [projectId]);
+
+  if (!project) return <div>Loading...</div>;
+
+  const image = process.env.PUBLIC_URL + "/" + project.src;
 
   return (
     <div className={styles.body}>
-      {project && (
-        <>
-          <h1>{project.title}</h1>
-          <div className={styles.first}>
-            <img className={styles.img} alt={project.title} src={project.src} />
-          </div>
-          <div className={styles.second}>
-            <p>{project.description}</p>
-          </div>
-        </>
-      )}
+      <h1>{project.title}</h1>
+      <div className={styles.first}>
+        <img className={styles.img} alt={project.title} src={image} />
+      </div>
+      <div className={styles.second}>
+        <p>{project.description}</p>
+      </div>
     </div>
   );
 }

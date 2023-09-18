@@ -2,47 +2,61 @@
   "projects": [
     {
       "title": "Carrot Market (Currently Working)",
-      "src": "images/1.jpg",
+      "src": "logo192.png",
+      "url": "carrotmarket",
       "description": "description"
     },
     {
       "title": "Airbnb",
-      "src": "images/1.jpg",
+      "url": "airbnb",
+      "src": "images/2.jpg",
       "description": "description"
     },
     {
       "title": "Wetube",
-      "src": "images/1.jpg",
+      "url": "wetube",
+      "src": "images/2.jpg",
       "description": "description"
     },
     {
       "title": "Netflix",
-      "src": "images/1.jpg",
+      "url": "netflix",
+
+      "src": "images/2.jpg",
       "description": "description"
     },
     {
       "title": "My Website",
-      "src": "images/1.jpg",
+      "url": "mywebsite",
+
+      "src": "images/2.jpg",
       "description": "description"
     },
     {
       "title": "Twitter",
-      "src": "images/1.jpg",
+      "url": "twitter",
+
+      "src": "images/2.jpg",
       "description": "description"
     },
     {
       "title": "PeachParty",
-      "src": "images/1.jpg",
+      "url": "peachparty",
+
+      "src": "images/2.jpg",
       "description": "description"
     },
     {
       "title": "PnetPhelix",
-      "src": "images/1.jpg",
+      "url": "pnetphelix",
+
+      "src": "images/2.jpg",
       "description": "description"
     },
     {
       "title": "Practice Projects",
-      "src": "images/1.jpg",
+      "url": "practiceprojects",
+      "src": "images/2.jpg",
       "description": "description"
     }
   ]
