@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import image from "../image/1.jpg";
+import React, { useState } from "react";
 import Iconbutton from "../components/Iconbutton";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Wrapper = styled.div`
   margin-top: 6%;
@@ -81,7 +83,52 @@ const ContactButton = styled.a`
   }
 `;
 
+const Images = styled.div`
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  cursor: pointer;
+`;
+
+function ImageModal({ src, onClose }: { src: string; onClose: () => void }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={onClose}
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "rgba(0,0,0,0.7)",
+        zIndex: 1000,
+        cursor: "pointer",
+      }}
+    >
+      <motion.img
+        src={src}
+        alt="Selected"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: 50, opacity: 0 }}
+      />
+    </motion.div>
+  );
+}
+
 function MyProfile() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const handleClickImage = (src: string) => {
+    setSelectedImage(src);
+  };
   return (
     <Wrapper>
       <Img src={image} />
@@ -130,6 +177,24 @@ function MyProfile() {
           <Iconbutton />
         </section>
       </Summary>
+      <Images>
+        {[image, image, image, image].map((imageSrc, index) => (
+          <Img
+            key={index}
+            src={imageSrc}
+            onClick={() => handleClickImage(imageSrc)}
+          />
+        ))}
+      </Images>
+
+      <AnimatePresence>
+        {selectedImage && (
+          <ImageModal
+            src={selectedImage}
+            onClose={() => setSelectedImage(null)}
+          />
+        )}
+      </AnimatePresence>
     </Wrapper>
   );
 }
