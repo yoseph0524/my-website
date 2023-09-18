@@ -18,6 +18,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:projectId" element={<Detail />} />
         <Route path="/myprofile" element={<MyProfile />} />
+        <Route path="/my-website" element={<MyProfile />} />
         <Route path="/" element={<MyProfile />} />
       </Routes>
     </Router>

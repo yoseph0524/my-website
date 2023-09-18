@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import image from "../image/1.jpg";
+import Iconbutton from "../components/Iconbutton";
 
 const Wrapper = styled.div`
   margin-top: 6%;
@@ -60,13 +61,14 @@ const Summary = styled.div`
 
 const ContactButton = styled.a`
   display: inline-block;
-  background-color: #007bff; /* Blue background */
+  background-color: #007bff;
   color: #fff !important;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
-  text-decoration: none; /* Removes underlines */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth color change and slight scale on hover */
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, transform 0.2s;
 
   &:hover {
     background-color: #0056b3; /* Darker blue on hover */
@@ -125,6 +127,7 @@ function MyProfile() {
             hesitate to reach out and share your ideas with me.
           </p>
           <ContactButton href="/contacts">Contact Me</ContactButton>
+          <Iconbutton />
         </section>
       </Summary>
     </Wrapper>
