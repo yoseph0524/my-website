@@ -1,5 +1,10 @@
 import styled from "styled-components";
 import image from "../image/1.jpg";
+import image2 from "../image/2.JPG";
+import image3 from "../image/3.JPG";
+import image4 from "../image/4.JPG";
+import image5 from "../image/5.JPG";
+
 import React, { useState } from "react";
 import Iconbutton from "../components/Iconbutton";
 import { motion, AnimatePresence } from "framer-motion";
@@ -118,6 +123,11 @@ function ImageModal({ src, onClose }: { src: string; onClose: () => void }) {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 50, opacity: 0 }}
+        style={{
+          width: "50vw",
+          height: "50vw",
+          objectFit: "contain",
+        }}
       />
     </motion.div>
   );
@@ -178,7 +188,7 @@ function MyProfile() {
         </section>
       </Summary>
       <Images>
-        {[image, image, image, image].map((imageSrc, index) => (
+        {[image2, image3, image4, image5].map((imageSrc, index) => (
           <Img
             key={index}
             src={imageSrc}
