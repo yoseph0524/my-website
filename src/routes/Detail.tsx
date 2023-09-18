@@ -7,6 +7,9 @@ type Project = {
   src: string;
   url: string;
   description: string;
+  used: string;
+  learned: string;
+  improvements: string;
 };
 
 function Detail() {
@@ -52,12 +55,45 @@ function Detail() {
 
   return (
     <div className={styles.body}>
-      <h1>{project.title}</h1>
-      <div className={styles.first}>
+      <div className={styles.header}>
+        <h1>{project.title}</h1>
+        <div className={styles.view}>
+          <a href={project.src}>
+            <button>View Web</button>
+          </a>
+          <a href={project.src}>
+            <button>View Code</button>
+          </a>
+        </div>
+      </div>
+
+      <div className={styles.paragraph}>
+        <div className={styles.text}>
+          <h2>Summary</h2>
+          <p>{project.description}</p>
+        </div>
         <img className={styles.img} alt={project.title} src={image} />
       </div>
-      <div className={styles.second}>
-        <p>{project.description}</p>
+      <div className={styles.paragraph}>
+        <div className={styles.text}>
+          <h2>What I Used</h2>
+          <p>{project.used}</p>
+        </div>
+        <img className={styles.img} alt={project.title} src={image} />
+      </div>
+      <div className={styles.paragraph}>
+        <div className={styles.text}>
+          <h2>What I Learned</h2>
+          <p>{project.learned}</p>
+        </div>
+        <img className={styles.img} alt={project.title} src={image} />
+      </div>
+      <div className={styles.paragraph}>
+        <div className={styles.text}>
+          <h2>Potential Improvements</h2>
+          <p>{project.improvements}</p>
+        </div>
+        <img className={styles.img} alt={project.title} src={image} />
       </div>
     </div>
   );

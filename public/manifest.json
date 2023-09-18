@@ -4,60 +4,82 @@
       "title": "Carrot Market (Currently Working)",
       "src": "logo192.png",
       "url": "carrotmarket",
-      "description": "description"
+      "description": "description",
+      "used": "What I Used",
+      "learned": "What I Learned",
+      "improvements": "Potential Improvements"
     },
     {
       "title": "Airbnb",
       "url": "airbnb",
       "src": "images/2.jpg",
-      "description": "description"
+      "description": "description",
+      "used": "What I Used",
+      "learned": "What I Learned",
+      "improvements": "Potential Improvements"
     },
     {
       "title": "Wetube",
       "url": "wetube",
       "src": "images/2.jpg",
-      "description": "description"
+      "description": "description",
+      "used": "What I Used",
+      "learned": "What I Learned",
+      "improvements": "Potential Improvements"
     },
     {
       "title": "Netflix",
       "url": "netflix",
-
       "src": "images/2.jpg",
-      "description": "description"
+      "description": "description",
+      "used": "What I Used",
+      "learned": "What I Learned",
+      "improvements": "Potential Improvements"
     },
     {
       "title": "My Website",
       "url": "mywebsite",
-
       "src": "images/2.jpg",
-      "description": "description"
+      "description": "description",
+      "used": "What I Used",
+      "learned": "What I Learned",
+      "improvements": "Potential Improvements"
     },
     {
       "title": "Twitter",
       "url": "twitter",
-
       "src": "images/2.jpg",
-      "description": "description"
+      "description": "description",
+      "used": "What I Used",
+      "learned": "What I Learned",
+      "improvements": "Potential Improvements"
     },
     {
       "title": "PeachParty",
       "url": "peachparty",
-
       "src": "images/2.jpg",
-      "description": "description"
+      "description": "description",
+      "used": "What I Used",
+      "learned": "What I Learned",
+      "improvements": "Potential Improvements"
     },
     {
       "title": "PnetPhelix",
       "url": "pnetphelix",
-
       "src": "images/2.jpg",
-      "description": "description"
+      "description": "description",
+      "used": "What I Used",
+      "learned": "What I Learned",
+      "improvements": "Potential Improvements"
     },
     {
       "title": "Practice Projects",
       "url": "practiceprojects",
       "src": "images/2.jpg",
-      "description": "description"
+      "description": "description",
+      "used": "What I Used",
+      "learned": "What I Learned",
+      "improvements": "Potential Improvements"
     }
   ]
 }
