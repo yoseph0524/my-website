@@ -15,6 +15,8 @@ const Project = styled.div`
   background-color: gray;
   margin-bottom: 15px;
   border-radius: 0% 15%;
+  display: grid;
+
   padding: 10px 20px;
   h1 {
     margin: 0;
