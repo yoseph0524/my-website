@@ -1,44 +1,83 @@
-import styled from "styled-components";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import "./courses.css";
 
-const Wrapper = styled.div`
-  background-color: black;
-  margin-bottom: 150px;
-`;
+type Course = {
+  name: string;
+  grade: string;
+  learned: string;
+};
 
-const Slider = styled.div`
-  position: relative;
-`;
+type SemesterCourses = {
+  [semester: string]: Course[];
+};
 
-const Row = styled(motion.div)`
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(5, 1fr);
-  position: absolute;
-  width: 100%;
-`;
+const boxVariants = {
+  normal: { scale: 1 },
+  hover: { scale: 1.2 },
+};
 
-const Box = styled(motion.div)`
-  background-color: white;
-  height: 200px;
-  color: red;
-  font-size: 66px;
-`;
+const modalVariants = {
+  hidden: { scale: 0 },
+  visible: { scale: 1 },
+};
 
-function Courses() {
+const Course: React.FC = () => {
+  const [courses, setCourses] = useState<SemesterCourses>({});
+
+  useEffect(() => {
+    fetch(process.env.PUBLIC_URL + "/courses.json")
+      .then((res) => res.json())
+      .then((data) => setCourses(data));
+  }, []);
+
+  const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
+
+  const handleClickCourse = (course: Course) => {
+    setSelectedCourse(course);
+  };
+
   return (
-    <Wrapper>
-      <Slider>
-        <AnimatePresence>
-          <Row>
-            {[1, 2, 3, 4, 5].map((i) => (
-              <Box key={i}>{i}</Box>
+    <div className="course-container">
+      {Object.entries(courses).map(([semester, semesterCourses]) => (
+        <div className="semester" key={semester}>
+          <h1 className="semester-title">{semester}</h1>
+          <div className="courses">
+            {semesterCourses.map((course, index) => (
+              <motion.div
+                key={index}
+                className="course"
+                variants={boxVariants}
+                initial="normal"
+                whileHover="hover"
+                onClick={() => handleClickCourse(course)}
+              >
+                <h2>{course.name}</h2>
+                <p>Grade: {course.grade}</p>
+                <p>Learned: {course.learned}</p>
+              </motion.div>
             ))}
-          </Row>
-        </AnimatePresence>
-      </Slider>
-    </Wrapper>
+          </div>
+        </div>
+      ))}
+      <AnimatePresence>
+        {selectedCourse && (
+          <motion.div
+            className="course-modal"
+            variants={modalVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            onClick={() => setSelectedCourse(null)}
+          >
+            <h2>{selectedCourse.name}</h2>
+            <p>Grade: {selectedCourse.grade}</p>
+            <p>Learned: {selectedCourse.learned}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
-}
-export default Courses;
+};
+
+export default Course;
