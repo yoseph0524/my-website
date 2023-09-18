@@ -1,4 +1,5 @@
 .course-container {
+  margin-top: 100px !important;
   width: 80%;
   margin: 0 auto;
   padding: 20px;
@@ -14,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 .semester-title {
@@ -26,12 +28,13 @@
 .courses {
   display: flex;
   gap: 20px;
-  justify-content: center;
   cursor: pointer;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .course {
-  width: 15%;
+  width: 25%;
   text-align: center;
   padding: 10px;
   border: 1px solid #e0e0e0;
@@ -54,6 +57,7 @@
   transform: translate(-50%, -50%) !important;
   z-index: 1000;
   width: 60%;
+  height: 60%;
   padding: 20px;
   background-color: #fff;
   border: 1px solid #e0e0e0;
@@ -81,4 +85,12 @@
 .course-modal ~ .course-container::after {
   opacity: 1;
   visibility: visible;
+}
+
+.course-container.modalActive > .semester {
+  filter: blur(5px);
+}
+
+.course-container.modalActive {
+  background-color: rgba(128, 128, 128, 0.5);
 }

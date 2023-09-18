@@ -18,8 +18,23 @@ const boxVariants = {
 };
 
 const modalVariants = {
-  hidden: { scale: 0 },
-  visible: { scale: 1 },
+  hidden: { scale: 0, opacity: 0 },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      damping: 20,
+    },
+  },
+  exit: {
+    scale: 0.75,
+    opacity: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
 };
 
 const Course: React.FC = () => {
@@ -38,7 +53,7 @@ const Course: React.FC = () => {
   };
 
   return (
-    <div className="course-container">
+    <div className={`course-container ${selectedCourse ? "modalActive" : ""}`}>
       {Object.entries(courses).map(([semester, semesterCourses]) => (
         <div className="semester" key={semester}>
           <h1 className="semester-title">{semester}</h1>
@@ -54,7 +69,6 @@ const Course: React.FC = () => {
               >
                 <h2>{course.name}</h2>
                 <p>Grade: {course.grade}</p>
-                <p>Learned: {course.learned}</p>
               </motion.div>
             ))}
           </div>
@@ -67,7 +81,7 @@ const Course: React.FC = () => {
             variants={modalVariants}
             initial="hidden"
             animate="visible"
-            exit="hidden"
+            exit="exit"
             onClick={() => setSelectedCourse(null)}
           >
             <h2>{selectedCourse.name}</h2>

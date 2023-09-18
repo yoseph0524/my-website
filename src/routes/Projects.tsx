@@ -14,7 +14,7 @@ const Layout = styled.div`
 const Project = styled.div`
   width: 80vw;
   height: 30vh;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.5);
   margin-bottom: 20px;
   border-radius: 0% 15%;
   display: grid;
