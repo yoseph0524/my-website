@@ -57,14 +57,18 @@ function Detail() {
     <div className={styles.body}>
       <div className={styles.header}>
         <h1>{project.title}</h1>
+
         <div className={styles.view}>
-          <a href={project.website}>
-            <button>View Web</button>
-          </a>
-          {/* if there is code */}
-          <a href={project.code}>
-            <button>View Code</button>
-          </a>
+          {project.website !== "" ? (
+            <a href={project.website}>
+              <button>View Web</button>
+            </a>
+          ) : null}
+          {project.code !== "" ? (
+            <a href={project.code}>
+              <button>View Code</button>
+            </a>
+          ) : null}
         </div>
       </div>
 

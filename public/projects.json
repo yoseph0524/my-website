@@ -8,7 +8,7 @@
       "used": "What I Used",
       "learned": "What I Learned",
       "improvements": "Potential Improvements",
-      "websites": "",
+      "website": "",
       "code": ""
     },
     {
@@ -19,7 +19,7 @@
       "used": "What I Used",
       "learned": "What I Learned",
       "improvements": "Potential Improvements",
-      "websites": "",
+      "website": "",
       "code": ""
     },
     {
@@ -41,8 +41,8 @@
       "used": "What I Used",
       "learned": "What I Learned",
       "improvements": "Potential Improvements",
-      "websites": "https://github.com/yoseph0524/react-netflix",
-      "code": ""
+      "website": "https://yoseph0524.github.io/react-netflix/",
+      "code": "https://github.com/yoseph0524/react-netflix"
     },
     {
       "title": "My Website",
@@ -52,7 +52,7 @@
       "used": "What I Used",
       "learned": "What I Learned",
       "improvements": "Potential Improvements",
-      "websites": "",
+      "website": "",
       "code": ""
     },
     {
@@ -63,7 +63,7 @@
       "used": "What I Used",
       "learned": "What I Learned",
       "improvements": "Potential Improvements",
-      "websites": "https://nwitter-6bec6.web.app/",
+      "website": "https://nwitter-6bec6.web.app/",
       "code": "https://github.com/yoseph0524/nwitter"
     },
     {
@@ -74,19 +74,19 @@
       "used": "What I Used",
       "learned": "What I Learned",
       "improvements": "Potential Improvements",
-      "websites": "",
-      "code": ""
+      "website": "",
+      "code": "https://github.com/yoseph0524/CS32_Project3"
     },
     {
       "title": "PnetPhelix",
       "url": "pnetphelix",
       "src": "images/2.jpg",
-      "description": "description",
+      "description": "Movie Recommendation Generator App. Efficiently generates movie recommendations for a given user.Can successfully generate recommendations in under a second given a database with ~40K Movies and ~100K Users.",
       "used": "What I Used",
       "learned": "What I Learned",
       "improvements": "Potential Improvements",
-      "websites": "",
-      "code": ""
+      "website": "",
+      "code": "https://github.com/yoseph0524/CS32_Project4"
     },
     {
       "title": "Practice Projects",
@@ -96,7 +96,7 @@
       "used": "What I Used",
       "learned": "What I Learned",
       "improvements": "Potential Improvements",
-      "websites": "",
+      "website": "",
       "code": ""
     }
   ]
