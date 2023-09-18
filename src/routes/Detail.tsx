@@ -7,10 +7,8 @@ type Project = {
   description: string;
 };
 
-type Projects = Project[];
-
 function Detail() {
-  const [projects, setProjects] = useState<Projects>([]);
+  const [project, setProject] = useState<Project | null>(null);
 
   const getProjects = async () => {
     try {
@@ -21,7 +19,7 @@ function Detail() {
       }
 
       const jsonData = await response.json();
-      setProjects(jsonData.projects);
+      setProject(jsonData.projects[0]); // Assuming you want the first project
     } catch (error) {
       if (error instanceof Error) {
         console.error("Fetch error: " + error.message);
@@ -34,28 +32,20 @@ function Detail() {
   useEffect(() => {
     getProjects();
   }, []);
-  console.log(projects);
+  console.log(project);
 
   return (
     <div className={styles.body}>
-      {projects.length === 0 ? (
-        <p>Loading projects...</p>
-      ) : (
-        projects.map((project, index) => (
-          <div key={index}>
-            <div className={styles.first}>
-              <img
-                className={styles.img}
-                alt={project.title}
-                src={project.src}
-              />
-            </div>
-            <div className={styles.second}>
-              <h1 className={styles.h1}>{project.title}</h1>
-              <p>{project.description}</p>
-            </div>
+      {project && (
+        <>
+          <h1>{project.title}</h1>
+          <div className={styles.first}>
+            <img className={styles.img} alt={project.title} src={project.src} />
           </div>
-        ))
+          <div className={styles.second}>
+            <p>{project.description}</p>
+          </div>
+        </>
       )}
     </div>
   );

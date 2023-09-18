@@ -1,13 +1,49 @@
 {
-  "projects":[
-      {
-          "title": "Youtube",
-          "src" : "images/1.jpg",
-          "description": "description"
-      }, {
-          "title": "Instagram",
-          "src" : "images/1.jpg",
-          "description": "description"
-      }
+  "projects": [
+    {
+      "title": "Carrot Market (Currently Working)",
+      "src": "images/1.jpg",
+      "description": "description"
+    },
+    {
+      "title": "Airbnb",
+      "src": "images/1.jpg",
+      "description": "description"
+    },
+    {
+      "title": "Wetube",
+      "src": "images/1.jpg",
+      "description": "description"
+    },
+    {
+      "title": "Netflix",
+      "src": "images/1.jpg",
+      "description": "description"
+    },
+    {
+      "title": "My Website",
+      "src": "images/1.jpg",
+      "description": "description"
+    },
+    {
+      "title": "Twitter",
+      "src": "images/1.jpg",
+      "description": "description"
+    },
+    {
+      "title": "PeachParty",
+      "src": "images/1.jpg",
+      "description": "description"
+    },
+    {
+      "title": "PnetPhelix",
+      "src": "images/1.jpg",
+      "description": "description"
+    },
+    {
+      "title": "Practice Projects",
+      "src": "images/1.jpg",
+      "description": "description"
+    }
   ]
 }

@@ -36,8 +36,8 @@ const StyledLink = styled(RouterLink)`
   cursor: pointer;
 `;
 const Img = styled.img`
-  width: 18%;
-  height: 90%;
+  width: 15%;
+  height: 40%;
   object-fit: cover;
   margin-right: 20px;
 `;
@@ -53,68 +53,84 @@ function Projects() {
     <Layout>
       <Project>
         <StyledLink to="/projects/carrotmarket">
-          <h1>Carrot Market (Currently Working)</h1>
+          <h1>Carrot Market</h1>
+          <Wrapper>
+            <Img src={image} />
+            <p>Description</p>
+          </Wrapper>
         </StyledLink>
-        <Wrapper>
-          <Img src={image} />
-          <p>Description</p>
-        </Wrapper>
       </Project>
       <Project>
-        <h1>Airbnb</h1>
-        <Wrapper>
-          <Img src={image} />
-          <p>Description</p>
-        </Wrapper>
-      </Project>{" "}
-      <Project>
-        <h1>Wetube</h1>
-        <Wrapper>
-          <Img src={image} />
-          <p>Description</p>
-        </Wrapper>
-      </Project>{" "}
-      <Project>
-        <h1>Netflix</h1>
-        <Wrapper>
-          <Img src={image} />
-          <p>Description</p>
-        </Wrapper>
-      </Project>{" "}
-      <Project>
-        <h1>Twitter</h1>
-        <Wrapper>
-          <Img src={image} />
-          <p>Description</p>
-        </Wrapper>
+        <StyledLink to="/projects/airbnb">
+          <h1>Airbnb</h1>
+          <Wrapper>
+            <Img src={image} />
+            <p>Description</p>
+          </Wrapper>
+        </StyledLink>
       </Project>
       <Project>
-        <h1>My Website</h1>
-        <Wrapper>
-          <Img src={image} />
-          <p>Description</p>
-        </Wrapper>
+        <StyledLink to="/projects/wetube">
+          <h1>Wetube</h1>
+          <Wrapper>
+            <Img src={image} />
+            <p>Description</p>
+          </Wrapper>
+        </StyledLink>
       </Project>
       <Project>
-        <h1>PeachParty</h1>
-        <Wrapper>
-          <Img src={image} />
-          <p>Description</p>
-        </Wrapper>
+        <StyledLink to="/projects/netflix">
+          <h1>Netflix</h1>
+          <Wrapper>
+            <Img src={image} />
+            <p>Description</p>
+          </Wrapper>
+        </StyledLink>
       </Project>
       <Project>
-        <h1>PnetPhilx</h1>
-        <Wrapper>
-          <Img src={image} />
-          <p>Description</p>
-        </Wrapper>
+        <StyledLink to="/projects/twitter">
+          <h1>Twitter</h1>
+          <Wrapper>
+            <Img src={image} />
+            <p>Description</p>
+          </Wrapper>
+        </StyledLink>
       </Project>
       <Project>
-        <h1>Practice Projects</h1>
-        <Wrapper>
-          <Img src={image} />
-          <p>Description</p>
-        </Wrapper>
+        <StyledLink to="/projects/mywebsite">
+          <h1>My Website</h1>
+          <Wrapper>
+            <Img src={image} />
+            <p>Description</p>
+          </Wrapper>
+        </StyledLink>
+      </Project>
+      <Project>
+        <StyledLink to="/projects/peachparty">
+          <h1>PeachParty</h1>
+          <Wrapper>
+            <Img src={image} />
+            <p>Description</p>
+          </Wrapper>{" "}
+        </StyledLink>
+      </Project>
+      <Project>
+        <StyledLink to="/projects/pnetphilx">
+          <h1>PnetPhilx</h1>
+          <Wrapper>
+            <Img src={image} />
+            <p>Description</p>
+          </Wrapper>
+        </StyledLink>
+      </Project>
+      <Project>
+        <StyledLink to="/projects/practiceprojects">
+          <h1>Practice Projects</h1>
+          <Wrapper>
+            <Img src={image} />
+            <p>Description</p>
+          </Wrapper>
+        </StyledLink>
       </Project>
     </Layout>
   );
