@@ -136,7 +136,7 @@ function Header() {
                 cursor: "pointer",
               }}
             >
-              Contacts {contactsMatch && <Circle layoutId="circle" />}
+              Contact {contactsMatch && <Circle layoutId="circle" />}
             </Link>
           </Item>
         </Items>

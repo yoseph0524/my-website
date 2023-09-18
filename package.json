@@ -15,7 +15,6 @@
     "@types/react-dom": "^18.0.9",
     "@types/react-stars": "^2.2.1",
     "framer-motion": "^7.6.7",
-    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0",
@@ -59,7 +58,8 @@
   "devDependencies": {
     "@types/react-beautiful-dnd": "^13.1.2",
     "@types/react-helmet": "^6.1.5",
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "gh-pages": "^6.0.0"
   },
   "homepage": "https://yoseph0524.github.io/my-website"
 }
