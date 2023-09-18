@@ -1,0 +1,138 @@
+{
+  "Fall 2023": [
+    {
+      "name": "Com Sci 33",
+      "coursename": "Introduction to Computer Organization",
+      "grade": "IP",
+      "learned": "In Progress"
+    },
+    {
+      "name": "Com Sci 35L",
+      "coursename": "Software Construction",
+      "grade": "IP",
+      "learned": "In Progress"
+    },
+    {
+      "name": "Com Sci M51A",
+      "coursename": "Logic Design of Digital Systems",
+      "grade": "IP",
+      "learned": "In Progress"
+    },
+    {
+      "name": "Stats 100A",
+      "coursename": "Introduction to Probability",
+      "grade": "IP",
+      "learned": "In Progress"
+    },
+    {
+      "name": "EC Engr 3",
+      "coursename": "Introduction to Electrical Engineering",
+      "grade": "IP",
+      "learned": "In Progress"
+    }
+  ],
+  "Summer 2023": [
+    {
+      "name": "Physics 1C",
+      "coursename": "Electrodynamics, Optics, and Special Relativity",
+      "grade": "A",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Math 115A",
+      "coursename": "Analysis",
+      "grade": "A",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Hist 13C",
+      "coursename": "History of the US and Its Colonial Origins",
+      "grade": "A",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Theater 10",
+      "coursename": "Introduction to Theater",
+      "grade": "A",
+      "learned": "what I learned"
+    }
+  ],
+  "Spring 2023": [
+    {
+      "name": "Math 32B",
+      "coursename": "Calculus of Several Variables",
+      "grade": "B+",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Math 61",
+      "coursename": "Introduction to Discrete Structures",
+      "grade": "A",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Physics 1B",
+      "coursename": "Oscillations, Waves, Electric, and Magnetic Fields",
+      "grade": "A",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Physics 4AL",
+      "coursename": "Physics Laboratory: Mechanics",
+      "grade": "A",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Stats 10",
+      "coursename": "Introduction to Statistical Reasoning",
+      "grade": "A",
+      "learned": "what I learned"
+    }
+  ],
+  "Winter 2023": [
+    {
+      "name": "Com Sci 32",
+      "coursename": "Introduction to Computer Science II",
+      "grade": "B+",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Math 32A",
+      "coursename": "Calculus of Several Variables",
+      "grade": "A-",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Math 33A",
+      "coursename": " Linear Algebra and Applications",
+      "grade": "A",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Math 33B",
+      "coursename": "Linear Algebra and Applications",
+      "grade": "A",
+      "learned": "what I learned"
+    }
+  ],
+  "Fall 2022": [
+    {
+      "name": "Com Sci 31",
+      "coursename": "Introduction to Computer Science I",
+      "grade": "B+",
+      "learned": "what I learned"
+    },
+    {
+      "name": "Math 31B",
+      "coursename": "Integration and Infinite Series",
+      "grade": "A",
+      "learned": "what I learned"
+    },
+    {
+      "name": "English 3",
+      "coursename": "English Composition, Rhetoric, and Language",
+      "grade": "A",
+      "learned": "what I learned"
+    }
+  ]
+}
