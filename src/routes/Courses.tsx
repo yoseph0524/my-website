@@ -4,6 +4,7 @@ import "./courses.css";
 
 type Course = {
   name: string;
+  coursename: string;
   grade: string;
   learned: string;
 };
@@ -68,6 +69,7 @@ const Course: React.FC = () => {
                 onClick={() => handleClickCourse(course)}
               >
                 <h2>{course.name}</h2>
+                <h4>{course.coursename}</h4>
                 <p>Grade: {course.grade}</p>
               </motion.div>
             ))}
@@ -86,7 +88,7 @@ const Course: React.FC = () => {
           >
             <h2>{selectedCourse.name}</h2>
             <p>Grade: {selectedCourse.grade}</p>
-            <p>Learned: {selectedCourse.learned}</p>
+            <p>{selectedCourse.learned}</p>
           </motion.div>
         )}
       </AnimatePresence>

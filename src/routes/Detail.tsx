@@ -10,17 +10,17 @@ type Project = {
   used: string;
   learned: string;
   improvements: string;
+  website: string;
+  code: string;
 };
 
 function Detail() {
   const [project, setProject] = useState<Project | null>(null);
   const { projectId } = useParams<{ projectId: string }>();
 
-  console.log(projectId);
-
   const getProjects = async () => {
     try {
-      const response = await fetch(process.env.PUBLIC_URL + "/manifest.json");
+      const response = await fetch(process.env.PUBLIC_URL + "/projects.json");
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -58,10 +58,11 @@ function Detail() {
       <div className={styles.header}>
         <h1>{project.title}</h1>
         <div className={styles.view}>
-          <a href={project.src}>
+          <a href={project.website}>
             <button>View Web</button>
           </a>
-          <a href={project.src}>
+          {/* if there is code */}
+          <a href={project.code}>
             <button>View Code</button>
           </a>
         </div>

@@ -7,7 +7,9 @@
       "description": "description",
       "used": "What I Used",
       "learned": "What I Learned",
-      "improvements": "Potential Improvements"
+      "improvements": "Potential Improvements",
+      "websites": "",
+      "code": ""
     },
     {
       "title": "Airbnb",
@@ -16,7 +18,9 @@
       "description": "description",
       "used": "What I Used",
       "learned": "What I Learned",
-      "improvements": "Potential Improvements"
+      "improvements": "Potential Improvements",
+      "websites": "",
+      "code": ""
     },
     {
       "title": "Wetube",
@@ -25,7 +29,9 @@
       "description": "description",
       "used": "What I Used",
       "learned": "What I Learned",
-      "improvements": "Potential Improvements"
+      "improvements": "Potential Improvements",
+      "website": "https://wetube-yoseph-2f352b3a8266.herokuapp.com/",
+      "code": "https://github.com/yoseph0524/wetube-"
     },
     {
       "title": "Netflix",
@@ -34,7 +40,9 @@
       "description": "description",
       "used": "What I Used",
       "learned": "What I Learned",
-      "improvements": "Potential Improvements"
+      "improvements": "Potential Improvements",
+      "websites": "https://github.com/yoseph0524/react-netflix",
+      "code": ""
     },
     {
       "title": "My Website",
@@ -43,7 +51,9 @@
       "description": "description",
       "used": "What I Used",
       "learned": "What I Learned",
-      "improvements": "Potential Improvements"
+      "improvements": "Potential Improvements",
+      "websites": "",
+      "code": ""
     },
     {
       "title": "Twitter",
@@ -52,7 +62,9 @@
       "description": "description",
       "used": "What I Used",
       "learned": "What I Learned",
-      "improvements": "Potential Improvements"
+      "improvements": "Potential Improvements",
+      "websites": "https://nwitter-6bec6.web.app/",
+      "code": "https://github.com/yoseph0524/nwitter"
     },
     {
       "title": "PeachParty",
@@ -61,7 +73,9 @@
       "description": "description",
       "used": "What I Used",
       "learned": "What I Learned",
-      "improvements": "Potential Improvements"
+      "improvements": "Potential Improvements",
+      "websites": "",
+      "code": ""
     },
     {
       "title": "PnetPhelix",
@@ -70,7 +84,9 @@
       "description": "description",
       "used": "What I Used",
       "learned": "What I Learned",
-      "improvements": "Potential Improvements"
+      "improvements": "Potential Improvements",
+      "websites": "",
+      "code": ""
     },
     {
       "title": "Practice Projects",
@@ -79,7 +95,9 @@
       "description": "description",
       "used": "What I Used",
       "learned": "What I Learned",
-      "improvements": "Potential Improvements"
+      "improvements": "Potential Improvements",
+      "websites": "",
+      "code": ""
     }
   ]
 }
