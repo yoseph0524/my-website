@@ -79,13 +79,15 @@ function Detail() {
         </div>
         <img className={styles.img} alt={project.title} src={image} />
       </div>
-      <div className={styles.paragraph}>
-        <div className={styles.text}>
-          <h2>What I Used</h2>
-          <p>{project.used}</p>
+      {project.used !== "" ? (
+        <div className={styles.paragraph}>
+          <div className={styles.text}>
+            <h2>What I Used</h2>
+            <p>{project.used}</p>
+          </div>
+          <img className={styles.img} alt={project.title} src={image} />
         </div>
-        <img className={styles.img} alt={project.title} src={image} />
-      </div>
+      ) : null}
       <div className={styles.paragraph}>
         <div className={styles.text}>
           <h2>What I Learned</h2>
@@ -93,13 +95,15 @@ function Detail() {
         </div>
         <img className={styles.img} alt={project.title} src={image} />
       </div>
-      <div className={styles.paragraph}>
-        <div className={styles.text}>
-          <h2>Potential Improvements</h2>
-          <p>{project.improvements}</p>
+      {project.improvements !== "" ? (
+        <div className={styles.paragraph}>
+          <div className={styles.text}>
+            <h2>Potential Improvements</h2>
+            <p>{project.improvements}</p>
+          </div>
+          <img className={styles.img} alt={project.title} src={image} />
         </div>
-        <img className={styles.img} alt={project.title} src={image} />
-      </div>
+      ) : null}
     </div>
   );
 }

@@ -45,6 +45,8 @@ const Wrapper = styled.div`
   display: flex;
   p {
     margin: 0;
+    margin-top: 20px;
+    font-size: 25px;
   }
 `;
 
@@ -74,7 +76,24 @@ function Projects() {
           <h1>Wetube</h1>
           <Wrapper>
             <Img src={image} />
-            <p>Description</p>
+            <p>
+              A comprehensive a video uploading and sharing portal that mirrors
+              essential functionalities. Users can stream videos, comment,
+              search, and even record and upload their own content.
+            </p>
+          </Wrapper>
+        </StyledLink>
+      </Project>
+      <Project>
+        <StyledLink to="/projects/chatdoge">
+          <h1>Chat Doge</h1>
+          <Wrapper>
+            <Img src={image} />
+            <p>
+              Developed a program where 'Doge' (an AI) predicts fortunes based
+              on users' birthdays and the current date. Integrated a commercial
+              banner to generate revenue.
+            </p>
           </Wrapper>
         </StyledLink>
       </Project>
@@ -83,7 +102,12 @@ function Projects() {
           <h1>Netflix</h1>
           <Wrapper>
             <Img src={image} />
-            <p>Description</p>
+            <p>
+              A Netflix clone equipped with cutting-edge React features and
+              libraries, offering capabilities like routing, styling, data
+              fetching, state management, and animations to mirror the user
+              experience of the original platform.
+            </p>
           </Wrapper>
         </StyledLink>
       </Project>
@@ -92,16 +116,12 @@ function Projects() {
           <h1>Twitter</h1>
           <Wrapper>
             <Img src={image} />
-            <p>Description</p>
-          </Wrapper>
-        </StyledLink>
-      </Project>
-      <Project>
-        <StyledLink to="/projects/mywebsite">
-          <h1>My Website</h1>
-          <Wrapper>
-            <Img src={image} />
-            <p>Description</p>
+            <p>
+              A comprehensive Twitter clone developed using Firebase and
+              React.js. The project highlights easy authentication methods and
+              protected pages while leveraging Google Cloud Storage for data
+              handling.
+            </p>
           </Wrapper>
         </StyledLink>
       </Project>
@@ -110,8 +130,12 @@ function Projects() {
           <h1>PeachParty</h1>
           <Wrapper>
             <Img src={image} />
-            <p>Description</p>
-          </Wrapper>{" "}
+            <p>
+              Developed a 2D board game inspired by Super Mario using only C++.
+              All character movements and interactions with the various board
+              boxes were meticulously implemented.
+            </p>
+          </Wrapper>
         </StyledLink>
       </Project>
       <Project>
@@ -119,7 +143,12 @@ function Projects() {
           <h1>PnetPhilx</h1>
           <Wrapper>
             <Img src={image} />
-            <p>Description</p>
+            <p>
+              Crafted a Movie Recommendation Generator App that swiftly provides
+              tailored movie suggestions. Designed to deliver results in under a
+              second, even with a database of approximately 40K movies and 100K
+              users.
+            </p>
           </Wrapper>
         </StyledLink>
       </Project>
