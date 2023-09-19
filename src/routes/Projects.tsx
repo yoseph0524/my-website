@@ -58,7 +58,14 @@ function Projects() {
           <h1>Carrot Market (Currently Working On)</h1>
           <Wrapper>
             <Img src={image} />
-            <p>Description</p>
+            <p>
+              Developed a comprehensive accommodation-sharing platform where
+              users can search, upload, and review listings. It integrates
+              advanced SNS functionalities including cell phone authentication,
+              customizable user profiles, and social 'likes'. A distinguishing
+              feature is the 'live shopping' capability, tapping into current
+              e-commerce trends.
+            </p>
           </Wrapper>
         </StyledLink>
       </Project>
@@ -67,7 +74,15 @@ function Projects() {
           <h1>Airbnb</h1>
           <Wrapper>
             <Img src={image} />
-            <p>Description</p>
+            <p>
+              Developed an accommodation-sharing platform with a robust backend
+              powered by Python, Django, Django REST Framework, and Strawberry
+              GraphQL. Users can effortlessly search for lodgings, mark
+              favorites, make reservations, and share their experiences through
+              reviews. Property owners have the flexibility to upload images,
+              detail their spaces, and manage everything from a dedicated
+              dashboard.
+            </p>
           </Wrapper>
         </StyledLink>
       </Project>
@@ -157,7 +172,11 @@ function Projects() {
           <h1>Practice Projects</h1>
           <Wrapper>
             <Img src={image} />
-            <p>Description</p>
+            <p>
+              This is a small practice projects when I made when I was first
+              learning to languages. I learned html, css, js, typescript, and
+              reactjs.
+            </p>
           </Wrapper>
         </StyledLink>
       </Project>

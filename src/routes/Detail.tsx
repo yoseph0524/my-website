@@ -88,13 +88,67 @@ function Detail() {
           <img className={styles.img} alt={project.title} src={image} />
         </div>
       ) : null}
-      <div className={styles.paragraph}>
-        <div className={styles.text}>
-          <h2>What I Learned</h2>
-          <p>{project.learned}</p>
+      {project.used !== "" ? (
+        <div className={styles.paragraph}>
+          <div className={styles.text}>
+            <h2>What I Learned</h2>
+            <p>{project.learned}</p>
+          </div>
+          <img className={styles.img} alt={project.title} src={image} />
         </div>
-        <img className={styles.img} alt={project.title} src={image} />
-      </div>
+      ) : (
+        <div className={styles.paragraph}>
+          <div className={styles.pages}>
+            <div>
+              <h2>Kokoa Talk</h2>
+              <a href="https://github.com/yoseph0524/kokoa-clone-2023">
+                <button>View Web</button>
+              </a>
+              <a href="https://yoseph0524.github.io/kokoa-clone-2023/">
+                <button>View Code</button>
+              </a>
+            </div>
+            <div>
+              <h2>Javascript Front Page</h2>
+              <a href="https://yoseph0524.github.io/Momentum-JavaScript-Project/">
+                <button>View Web</button>
+              </a>
+              <a href="https://github.com/yoseph0524/Momentum-JavaScript-Project">
+                <button>View Code</button>
+              </a>
+            </div>
+            <div>
+              <h2>React Todo</h2>
+              <a href="https://yoseph0524.github.io/react-todo/">
+                <button>View Web</button>
+              </a>
+              <a href="https://github.com/yoseph0524/react-todo">
+                <button>View Code</button>
+              </a>
+            </div>
+            <div>
+              <h2>React Crypto</h2>
+              <a href="https://yoseph0524.github.io/react-master">
+                <button>View Web</button>
+              </a>
+              <a href="https://github.com/yoseph0524/react-master">
+                <button>View Code</button>
+              </a>
+            </div>
+            <div>
+              <h2>React Movie</h2>
+              <a href="https://yoseph0524.github.io/react-for/">
+                <button>View Web</button>
+              </a>
+              <a href="https://github.com/yoseph0524/react-for">
+                <button>View Code</button>
+              </a>
+            </div>
+          </div>
+
+          <img className={styles.img} alt={project.title} src={image} />
+        </div>
+      )}
       {project.improvements !== "" ? (
         <div className={styles.paragraph}>
           <div className={styles.text}>
