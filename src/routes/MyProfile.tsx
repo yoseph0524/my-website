@@ -8,6 +8,7 @@ import image5 from "../image/5.JPG";
 import React, { useState } from "react";
 import Iconbutton from "../components/Iconbutton";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
   margin-top: 6%;
@@ -66,7 +67,7 @@ const Summary = styled.div`
   }
 `;
 
-const ContactButton = styled.a`
+const ContactButton = styled(Link)`
   display: inline-block;
   background-color: #007bff;
   color: #fff !important;
@@ -168,7 +169,9 @@ function MyProfile() {
 
         <p>
           Interested in exploring more about my work? &nbsp;
-          <a href="/projects">Click here to dive deeper into my projects!</a>
+          <Link to="/projects">
+            Click here to dive deeper into my projects!
+          </Link>
         </p>
         <section>
           <h2>Personal Interests</h2>
@@ -183,7 +186,7 @@ function MyProfile() {
             I'm always eager to explore new projects and collaborations. Don't
             hesitate to reach out and share your ideas with me.
           </p>
-          <ContactButton href="/contacts">Contact Me</ContactButton>
+          <ContactButton to="/contacts">Contact Me</ContactButton>
           <Iconbutton />
         </section>
       </Summary>
