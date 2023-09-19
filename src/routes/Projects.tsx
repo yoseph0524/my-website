@@ -78,7 +78,7 @@ function Projects() {
         <StyledLink to="/projects/airbnb">
           <h1>Airbnb</h1>
           <Wrapper>
-            <Img src={image} />
+            <Img src={process.env.PUBLIC_URL + "/images/0.png"} />
             <p>
               Developed an accommodation-sharing platform with a robust backend
               powered by Python, Django, Django REST Framework, and Strawberry
@@ -95,7 +95,7 @@ function Projects() {
         <StyledLink to="/projects/wetube">
           <h1>Wetube</h1>
           <Wrapper>
-            <Img src={image} />
+            <Img src={source("youtube")} />
             <p>
               A comprehensive a video uploading and sharing portal that mirrors
               essential functionalities. Users can stream videos, comment,
@@ -108,7 +108,7 @@ function Projects() {
         <StyledLink to="/projects/chatdoge">
           <h1>Chat Doge</h1>
           <Wrapper>
-            <Img src={image} />
+            <Img src={source("chatdoge")} />
             <p>
               Developed a program where 'Doge' (an AI) predicts fortunes based
               on users' birthdays and the current date. Integrated a commercial
@@ -121,7 +121,7 @@ function Projects() {
         <StyledLink to="/projects/netflix">
           <h1>Netflix</h1>
           <Wrapper>
-            <Img src={image} />
+            <Img src={source("netflix")} />
             <p>
               A Netflix clone equipped with cutting-edge React features and
               libraries, offering capabilities like routing, styling, data
@@ -135,7 +135,7 @@ function Projects() {
         <StyledLink to="/projects/twitter">
           <h1>Twitter</h1>
           <Wrapper>
-            <Img src={image} />
+            <Img src={source("twitter")} />
             <p>
               A comprehensive Twitter clone developed using Firebase and
               React.js. The project highlights easy authentication methods and
@@ -149,7 +149,7 @@ function Projects() {
         <StyledLink to="/projects/peachparty">
           <h1>PeachParty</h1>
           <Wrapper>
-            <Img src={image} />
+            <Img src={source("peachparty")} />
             <p>
               Developed a 2D board game inspired by Super Mario using only C++.
               All character movements and interactions with the various board
@@ -158,25 +158,12 @@ function Projects() {
           </Wrapper>
         </StyledLink>
       </Project>
-      <Project>
-        <StyledLink to="/projects/pnetphilx">
-          <h1>PnetPhilx</h1>
-          <Wrapper>
-            <Img src={image} />
-            <p>
-              Crafted a Movie Recommendation Generator App that swiftly provides
-              tailored movie suggestions. Designed to deliver results in under a
-              second, even with a database of approximately 40K movies and 100K
-              users.
-            </p>
-          </Wrapper>
-        </StyledLink>
-      </Project>
+
       <Project>
         <StyledLink to="/projects/practiceprojects">
           <h1>Practice Projects</h1>
           <Wrapper>
-            <Img src={image} />
+            <Img src={source("practice")} />
             <p>
               This is a small practice projects when I made when I was first
               learning to languages. I learned html, css, js, typescript, and

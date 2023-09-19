@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import "./courses.css";
 
 type Course = {
@@ -14,28 +14,8 @@ type SemesterCourses = {
 };
 
 const boxVariants = {
-  normal: { scale: 1 },
-  hover: { scale: 1.2 },
-};
-
-const modalVariants = {
-  hidden: { scale: 0, opacity: 0 },
-  visible: {
-    scale: 1,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 20,
-    },
-  },
-  exit: {
-    scale: 0.75,
-    opacity: 0,
-    transition: {
-      duration: 0.5,
-    },
-  },
+  normal: { scale: 1, zIndex: 1, backgroundColor: "initial" },
+  hover: { scale: 1.2, zIndex: 5, backgroundColor: "white" },
 };
 
 const Course: React.FC = () => {
@@ -47,14 +27,8 @@ const Course: React.FC = () => {
       .then((data) => setCourses(data));
   }, []);
 
-  const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
-
-  const handleClickCourse = (course: Course) => {
-    setSelectedCourse(course);
-  };
-
   return (
-    <div className={`course-container ${selectedCourse ? "modalActive" : ""}`}>
+    <div className="course-container">
       {Object.entries(courses).map(([semester, semesterCourses]) => (
         <div className="semester" key={semester}>
           <h1 className="semester-title">{semester}</h1>
@@ -66,7 +40,6 @@ const Course: React.FC = () => {
                 variants={boxVariants}
                 initial="normal"
                 whileHover="hover"
-                onClick={() => handleClickCourse(course)}
               >
                 <h2>{course.name}</h2>
                 <h4>{course.coursename}</h4>
@@ -76,22 +49,6 @@ const Course: React.FC = () => {
           </div>
         </div>
       ))}
-      <AnimatePresence>
-        {selectedCourse && (
-          <motion.div
-            className="course-modal"
-            variants={modalVariants}
-            initial="hidden"
-            animate="visible"
-            exit="exit"
-            onClick={() => setSelectedCourse(null)}
-          >
-            <h2>{selectedCourse.name}</h2>
-            <p>Grade: {selectedCourse.grade}</p>
-            <p>{selectedCourse.learned}</p>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 };

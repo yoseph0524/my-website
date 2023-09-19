@@ -22,6 +22,7 @@ const Nav = styled(motion.nav)`
   margin: 0;
   background-color: black !important;
   height: 4%;
+  z-index: 99;
 `;
 
 const Col = styled.div`

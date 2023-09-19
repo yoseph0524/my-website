@@ -130,7 +130,7 @@ function Detail() {
           />
         </div>
       ) : null}
-      {project.used !== "" ? (
+      {project.learned !== "" ? (
         <div className={styles.paragraph}>
           <div className={styles.text}>
             <h2>What I Learned</h2>
@@ -193,7 +193,11 @@ function Detail() {
             </div>
           </div>
 
-          <img className={styles.img} alt={project.title} src={image} />
+          <img
+            className={styles.img}
+            alt={project.title}
+            src={image + project.src.two}
+          />
         </div>
       )}
       {project.improvements !== "" ? (

@@ -3,10 +3,10 @@
     {
       "title": "Carrot Market (Currently Working)",
       "src": {
-        "one": "/images/youtube/1.png",
-        "two": "/images/youtube/2.png",
-        "three": "/images/youtube/3.png",
-        "four": "/images/youtube/4.png"
+        "one": "/images/carrotmarket/1.png",
+        "two": "/images/carrotmarket/2.png",
+        "three": "/images/carrotmarket/3.png",
+        "four": "/images/carrotmarket/4.png"
       },
       "url": "carrotmarket",
       "description": "Developed a comprehensive accommodation-sharing platform where users can search, upload, and review listings. It integrates advanced SNS functionalities including cell phone authentication, customizable user profiles, and social 'likes'. A distinguishing feature is the 'live shopping' capability, tapping into current e-commerce trends.",
@@ -19,7 +19,12 @@
     {
       "title": "Airbnb",
       "url": "airbnb",
-      "src": "images/2.jpg",
+      "src": {
+        "one": "/images/airbnb/1.png",
+        "two": "/images/airbnb/2.png",
+        "three": "/images/airbnb/3.png",
+        "four": "/images/airbnb/4.png"
+      },
       "description": "Developed an accommodation-sharing platform with a robust backend powered by Python, Django, Django REST Framework, and Strawberry GraphQL. Users can effortlessly search for lodgings, mark favorites, make reservations, and share their experiences through reviews. Property owners have the flexibility to upload images, detail their spaces, and manage everything from a dedicated dashboard.",
       "used": "The Django ecosystem played a pivotal role with its features like the Admin Panel, ORM, and User Management. Through the Django REST Framework, prevalent among high-profile startups, we crafted REST APIs. Beyond REST, we ventured into GraphQL with Strawberry. The frontend's interactivity is thanks to React, further enhanced by React's data-fetching and styling capabilities.",
       "learned": "This project deepened my expertise in areas such as Django's ORM, unit testing, user management, and admin panel customization. I further honed my skills in both function-based and class-based views, Django templates, Django Rest Framework, Strawberry, SQL, Chakra UI, React, and its accompanying tools like the React Testing Library, React Query, and Apollo Client.",
@@ -46,7 +51,12 @@
     {
       "title": "ChatDoge",
       "url": "chatdoge",
-      "src": "images/2.jpg",
+      "src": {
+        "one": "/images/chatdoge/1.png",
+        "two": "/images/chatdoge/2.png",
+        "three": "/images/chatdoge/3.png",
+        "four": "/images/chatdoge/4.png"
+      },
       "description": "Developed a program where 'Doge' (an AI) predicts fortunes based on users' birthdays and the current date. Integrated a commercial banner to generate revenue.",
       "used": "Leveraged Chat GPT for AI-based interactions and express and AWS Lambda for serverless computing, kako adfit for commercial banner",
       "learned": "Gained insights into integrating AI, specifically Chat GPT, to fetch text information from the backend for frontend display. Additionally, understood the mechanics of embedding commercial banners from specific companies to monetize user interactions.",
@@ -57,7 +67,12 @@
     {
       "title": "Netflix",
       "url": "netflix",
-      "src": "images/2.jpg",
+      "src": {
+        "one": "/images/netflix/1.png",
+        "two": "/images/netflix/2.png",
+        "three": "/images/netflix/3.png",
+        "four": "/images/netflix/4.png"
+      },
       "description": "A Netflix clone equipped with cutting-edge React features and libraries, offering capabilities like routing, styling, data fetching, state management, and animations to mirror the user experience of the original platform.",
       "used": "Technologies and libraries leveraged include: Routing, State Management, Data Fetching, Animations, TypeScript, React Router, Styled Components, Framer Motion, Recoil, Beautiful DnD, Apex Charts, React Query, and React Hook Form.",
       "learned": "This project provided hands-on experience with importing data from the Netflix API through React Query. It showcased the creation of an adaptive design system, inclusive of a dark mode, using Styled Components. I delved into constructing and validating input forms with React Hook Form and grasped advanced state management using Recoil's atoms and selectors. Furthermore, using Framer Motion, I incorporated enticing animations, sliders, and modal-like interactions.",
@@ -68,7 +83,12 @@
     {
       "title": "Twitter",
       "url": "twitter",
-      "src": "images/2.jpg",
+      "src": {
+        "one": "/images/twitter/1.png",
+        "two": "/images/twitter/2.png",
+        "three": "/images/twitter/3.png",
+        "four": "/images/twitter/4.png"
+      },
       "description": "A comprehensive Twitter clone developed using Firebase and React.js. The project highlights easy authentication methods and protected pages while leveraging Google Cloud Storage for data handling.",
       "used": "The core technologies and libraries employed are: React, React Hooks, React Router, Firebase, Create React App, and Github Pages.",
       "learned": "Throughout this project, I delved into Firebase and its robust features, including Cloud Firestore and its NoSQL realtime database capabilities. I became adept at querying, filtering, and handling Firebase Authentication. Other key learnings include leveraging Google Cloud Storage and various authentication methods such as Email, Google, and Github. The project also facilitated hands-on experience with Tweet CRUD operations, implementing protected pages, crafting profile pages, managing file uploads, deployment best practices, and ensuring API key security.",
@@ -79,7 +99,12 @@
     {
       "title": "PeachParty",
       "url": "peachparty",
-      "src": "images/2.jpg",
+      "src": {
+        "one": "/images/peachparty/1.png",
+        "two": "/images/peachparty/2.png",
+        "three": "/images/peachparty/3.png",
+        "four": "/images/peachparty/4.png"
+      },
       "description": "Developed a 2D board game inspired by Super Mario using only C++. All character movements and interactions with the various board boxes were meticulously implemented.",
       "used": "",
       "learned": "This project provided insights into the efficiency of object-oriented programming. I recognized the value of class hierarchies in reducing code redundancy. Additionally, it offered practical understanding of how different files can seamlessly interact, exemplifying the 'divide and conquer' approach in software design.",
@@ -88,20 +113,14 @@
       "code": "https://github.com/yoseph0524/CS32_Project3"
     },
     {
-      "title": "PnetPhelix",
-      "url": "pnetphelix",
-      "src": "images/2.jpg",
-      "description": "Crafted a Movie Recommendation Generator App that swiftly provides tailored movie suggestions. Designed to deliver results in under a second, even with a database of approximately 40K movies and 100K users.",
-      "used": "",
-      "learned": "This endeavor deepened my understanding of managing large datasets. I grasped techniques for efficient data querying and exclusion. Additionally, I honed skills in scoring and ranking movies to generate the most fitting recommendations quickly.",
-      "improvements": "Future plans involve enabling users to input movies they've watched, which will further refine the recommendation process by personalizing movie suggestions based on their viewing history.",
-      "website": "",
-      "code": "https://github.com/yoseph0524/CS32_Project4"
-    },
-    {
       "title": "Practice Projects",
       "url": "practiceprojects",
-      "src": "images/2.jpg",
+      "src": {
+        "one": "/images/practice/1.png",
+        "two": "/images/practice/2.png",
+        "three": "/images/practice/3.png",
+        "four": "/images/practice/4.png"
+      },
       "description": "This is a small practice projects when I made when I was first learning to languages. I learned html, css, js, typescript, reactjs",
       "used": "",
       "learned": "",
