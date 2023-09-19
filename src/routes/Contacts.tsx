@@ -7,7 +7,6 @@ const Contact = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    // TODO: Integrate with your backend or email service to send the email
     console.log(`Email: ${email}, Message: ${message}`);
   };
 

@@ -14,14 +14,14 @@ const IconButton = styled.a`
   padding: 10px;
   border-radius: 5px;
   margin-right: 10px; // Spacing between buttons
-  transition: transform 0.2s; // Smooth transformation on hover
+  transition: transform 0.2s;
 
   &:hover {
-    transform: scale(1.1); // Slightly enlarges the button on hover
+    transform: scale(1.1);
   }
 
   &:last-child {
-    margin-right: 0; // Ensures the last button doesn't have a right margin
+    margin-right: 0;
   }
 `;
 

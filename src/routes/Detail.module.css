@@ -18,45 +18,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Gap between buttons */
+  gap: 10px;
   margin-top: 20px;
 }
 
 .view a {
-  text-decoration: none; /* Removes the underline */
+  text-decoration: none;
 }
 
 .view button {
-  cursor: pointer; /* Shows a hand cursor when hovering over the button */
+  cursor: pointer;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  font-weight: 600; /* Makes the font slightly bold */
-  transition: background-color 0.3s, transform 0.1s; /* Smooth transition effect on hover */
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.1s;
 
-  /* Background and text color */
   background-color: #007bff;
   color: #ffffff;
 
-  /* Remove focus styles for cleaner design */
   outline: none;
   box-shadow: none;
 }
 
-/* Hover effect for the button */
 .view button:hover {
-  background-color: #0056b3; /* Darkens the background color a bit */
-  transform: scale(1.05); /* Slightly enlarges the button */
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
-/* If you wish, you can differentiate the code button from the web button */
 .view a:nth-child(2) button {
-  background-color: #333; /* Darker background for the code button */
+  background-color: #333;
 }
 
 .view a:nth-child(2) button:hover {
-  background-color: #111; /* Even darker on hover for the code button */
+  background-color: #111;
 }
 
 .img {
