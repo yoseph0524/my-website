@@ -2,12 +2,17 @@
   "projects": [
     {
       "title": "Carrot Market (Currently Working)",
-      "src": "logo192.png",
+      "src": {
+        "one": "/images/youtube/1.png",
+        "two": "/images/youtube/2.png",
+        "three": "/images/youtube/3.png",
+        "four": "/images/youtube/4.png"
+      },
       "url": "carrotmarket",
       "description": "Developed a comprehensive accommodation-sharing platform where users can search, upload, and review listings. It integrates advanced SNS functionalities including cell phone authentication, customizable user profiles, and social 'likes'. A distinguishing feature is the 'live shopping' capability, tapping into current e-commerce trends.",
       "used": "Utilized NextJS for crafting swift and professional React applications. Optimized for exceptional rendering and load times using state-of-the-art techniques. Adopted a serverless architecture, making the application highly scalable, minimizing server costs, and simplifying administration. Embraced Cloudflare's prowess to achieve 'real-time streaming', paving the way for 'Live Commerce' accessible across devices.",
       "learned": "This project enriched my knowledge in cutting-edge techniques like Server-Side Rendering, Static Generation, and Incremental Static Regeneration. Gained proficiency in Serverless Architecture, Stateless Authentication, and innovative React functionalities like Suspense and SSR Streaming. Worked with an array of tools including NextJS, SWR, Typescript, Prisma, TailwindCSS, MDX, Cloudflare Streams, Vercel, Twilio, and more.",
-      "improvements": "Potential Improvements",
+      "improvements": "",
       "website": "",
       "code": ""
     },
@@ -25,7 +30,12 @@
     {
       "title": "Wetube",
       "url": "wetube",
-      "src": "images/2.jpg",
+      "src": {
+        "one": "/images/youtube/1.png",
+        "two": "/images/youtube/2.png",
+        "three": "/images/youtube/3.png",
+        "four": "/images/youtube/4.png"
+      },
       "description": "A comprehensive a video uploading and sharing portal that mirrors essential functionalities. Users can stream videos, comment, search, and even record and upload their own content.",
       "used": "Leveraged Node.js for consistent JavaScript on both the front and back end. Utilized Express for server creation, paired with Mongoose and MongoDB for database access. The UI is crafted using ES6 and SCSS for an engaging user experience.",
       "learned": "Gained deep insights into various web development concepts including Request/Response mechanics, the MVC architecture, and the intricacies of cookies, sessions, and middlewares. I deepened my understanding of authentication protocols, security best practices, routing, templates, and database model relationships. I also explored the inner workings of Node.js and learned how to utilize Express and Pug for server and website creation. I employed Babel for code transpilation, and managed databases using Mongoose and MongoDB, gaining a clearer grasp of NoSQL database systems.",

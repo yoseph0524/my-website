@@ -1,10 +1,16 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./Detail.module.css";
+import { motion } from "framer-motion";
 
 type Project = {
   title: string;
-  src: string;
+  src: {
+    one: string;
+    two: string;
+    three: string;
+    four: string;
+  };
   url: string;
   description: string;
   used: string;
@@ -15,6 +21,18 @@ type Project = {
 };
 
 function Detail() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [modalImage, setModalImage] = useState("");
+
+  const openModal = (imageSrc: string) => {
+    setModalImage(imageSrc);
+    setIsModalVisible(true);
+  };
+
+  const closeModal = () => {
+    setIsModalVisible(false);
+    setModalImage("");
+  };
   const [project, setProject] = useState<Project | null>(null);
   const { projectId } = useParams<{ projectId: string }>();
 
@@ -51,10 +69,24 @@ function Detail() {
 
   if (!project) return <div>Loading...</div>;
 
-  const image = process.env.PUBLIC_URL + "/" + project.src;
+  const image = process.env.PUBLIC_URL;
 
   return (
     <div className={styles.body}>
+      {isModalVisible && (
+        <div className={styles.modalOverlay}>
+          <div className={styles.modal}>
+            <img
+              src={modalImage}
+              alt="Modal content"
+              className={styles.modalImage}
+            />
+            <button onClick={closeModal} className={styles.modalCloseBtn}>
+              Close
+            </button>
+          </div>
+        </div>
+      )}
       <div className={styles.header}>
         <h1>{project.title}</h1>
 
@@ -77,7 +109,12 @@ function Detail() {
           <h2>Summary</h2>
           <p>{project.description}</p>
         </div>
-        <img className={styles.img} alt={project.title} src={image} />
+        <img
+          className={styles.img}
+          alt={project.title}
+          src={image + project.src.one}
+          onClick={() => openModal(image + project.src.one)}
+        />
       </div>
       {project.used !== "" ? (
         <div className={styles.paragraph}>
@@ -85,7 +122,12 @@ function Detail() {
             <h2>What I Used</h2>
             <p>{project.used}</p>
           </div>
-          <img className={styles.img} alt={project.title} src={image} />
+          <img
+            className={styles.img}
+            alt={project.title}
+            src={image + project.src.two}
+            onClick={() => openModal(image + project.src.two)}
+          />
         </div>
       ) : null}
       {project.used !== "" ? (
@@ -94,7 +136,12 @@ function Detail() {
             <h2>What I Learned</h2>
             <p>{project.learned}</p>
           </div>
-          <img className={styles.img} alt={project.title} src={image} />
+          <img
+            className={styles.img}
+            alt={project.title}
+            src={image + project.src.three}
+            onClick={() => openModal(image + project.src.three)}
+          />
         </div>
       ) : (
         <div className={styles.paragraph}>
@@ -155,7 +202,12 @@ function Detail() {
             <h2>Potential Improvements</h2>
             <p>{project.improvements}</p>
           </div>
-          <img className={styles.img} alt={project.title} src={image} />
+          <img
+            className={styles.img}
+            alt={project.title}
+            src={image + project.src.four}
+            onClick={() => openModal(image + project.src.four)}
+          />
         </div>
       ) : null}
     </div>

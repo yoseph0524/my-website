@@ -19,6 +19,7 @@ const Project = styled.div`
   border-radius: 0% 15%;
   display: grid;
   padding: 15px 40px;
+  overflow-y: auto; 
   h1 {
     cursor: pointer;
     margin: 0;
@@ -48,16 +49,20 @@ const Wrapper = styled.div`
     margin-top: 20px;
     font-size: 25px;
   }
+  align-items: center;
 `;
 
 function Projects() {
+  const source = (place: string) => {
+    return process.env.PUBLIC_URL + `/images/${place}/1.png`;
+  };
   return (
     <Layout>
       <Project>
         <StyledLink to="/projects/carrotmarket">
           <h1>Carrot Market (Currently Working On)</h1>
           <Wrapper>
-            <Img src={image} />
+            <Img src={process.env.PUBLIC_URL + "/images/0.png"} />
             <p>
               Developed a comprehensive accommodation-sharing platform where
               users can search, upload, and review listings. It integrates
