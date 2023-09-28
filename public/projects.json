@@ -28,9 +28,9 @@
       "description": "Developed an accommodation-sharing platform with a robust backend powered by Python, Django, Django REST Framework, and Strawberry GraphQL. Users can effortlessly search for lodgings, mark favorites, make reservations, and share their experiences through reviews. Property owners have the flexibility to upload images, detail their spaces, and manage everything from a dedicated dashboard.",
       "used": "The Django ecosystem played a pivotal role with its features like the Admin Panel, ORM, and User Management. Through the Django REST Framework, prevalent among high-profile startups, we crafted REST APIs. Beyond REST, we ventured into GraphQL with Strawberry. The frontend's interactivity is thanks to React, further enhanced by React's data-fetching and styling capabilities.",
       "learned": "This project deepened my expertise in areas such as Django's ORM, unit testing, user management, and admin panel customization. I further honed my skills in both function-based and class-based views, Django templates, Django Rest Framework, Strawberry, SQL, Chakra UI, React, and its accompanying tools like the React Testing Library, React Query, and Apollo Client.",
-      "improvements": "Potential Improvements",
-      "website": "",
-      "code": ""
+      "improvements": "Some times, I cannot log in in deployed server, but can do it in local server. I want to add edit Room, booking room, customer's booking list and owner's booking list.",
+      "website": "https://airbnb-frontend-znk9.onrender.com/",
+      "code": "https://github.com/yoseph0524/airbnb-backend"
     },
     {
       "title": "Wetube",

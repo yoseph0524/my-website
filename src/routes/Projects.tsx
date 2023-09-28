@@ -78,7 +78,7 @@ function Projects() {
         <StyledLink to="/projects/airbnb">
           <h1>Airbnb</h1>
           <Wrapper>
-            <Img src={process.env.PUBLIC_URL + "/images/0.png"} />
+            <Img src={source("airbnb")} />
             <p>
               Developed an accommodation-sharing platform with a robust backend
               powered by Python, Django, Django REST Framework, and Strawberry
