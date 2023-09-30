@@ -12,7 +12,7 @@
       "description": "Developed a comprehensive accommodation-sharing platform where users can search, upload, and review listings. It integrates advanced SNS functionalities including cell phone authentication, customizable user profiles, and social 'likes'. A distinguishing feature is the 'live shopping' capability, tapping into current e-commerce trends.",
       "used": "Utilized NextJS for crafting swift and professional React applications. Optimized for exceptional rendering and load times using state-of-the-art techniques. Adopted a serverless architecture, making the application highly scalable, minimizing server costs, and simplifying administration. Embraced Cloudflare's prowess to achieve 'real-time streaming', paving the way for 'Live Commerce' accessible across devices.",
       "learned": "This project enriched my knowledge in cutting-edge techniques like Server-Side Rendering, Static Generation, and Incremental Static Regeneration. Gained proficiency in Serverless Architecture, Stateless Authentication, and innovative React functionalities like Suspense and SSR Streaming. Worked with an array of tools including NextJS, SWR, Typescript, Prisma, TailwindCSS, MDX, Cloudflare Streams, Vercel, Twilio, and more.",
-      "improvements": "",
+      "improvements": "In Progress",
       "website": "",
       "code": ""
     },
