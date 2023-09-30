@@ -82,7 +82,7 @@ function Detail() {
               className={styles.modalImage}
             />
             <button onClick={closeModal} className={styles.modalCloseBtn}>
-              Close
+              X
             </button>
           </div>
         </div>

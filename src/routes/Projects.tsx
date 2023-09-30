@@ -41,15 +41,16 @@ const Img = styled.img`
   height: 40%;
   object-fit: cover;
   margin-right: 20px;
+  margin-top: 20px;
 `;
 const Wrapper = styled.div`
   display: flex;
+  position: relative;
   p {
     margin: 0;
     margin-top: 20px;
     font-size: 25px;
   }
-  align-items: center;
 `;
 
 function Projects() {
@@ -62,7 +63,7 @@ function Projects() {
         <StyledLink to="/projects/carrotmarket">
           <h1>Carrot Market (Currently Working On)</h1>
           <Wrapper>
-            <Img src={process.env.PUBLIC_URL + "/images/0.png"} />
+            <Img src={source("carrotmarket")} />
             <p>
               Developed a comprehensive accommodation-sharing platform where
               users can search, upload, and review listings. It integrates
